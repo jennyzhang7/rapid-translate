@@ -1,54 +1,55 @@
 import React from "react";
-import { Dropdown } from "semantic-ui-react";
+import { Dropdown, Grid, Segment } from "semantic-ui-react";
+
 const friendOptions = [
   {
     key: "Jenny Hess",
     text: "Jenny Hess",
     value: "Jenny Hess",
-    image: { avatar: true, src: "/images/avatar/small/jenny.jpg" },
+    // image: { avatar: true, src: "/images/avatar/small/jenny.jpg" },
   },
   {
     key: "Elliot Fu",
     text: "Elliot Fu",
     value: "Elliot Fu",
-    image: { avatar: true, src: "/images/avatar/small/elliot.jpg" },
+    // image: { avatar: true, src: "/images/avatar/small/elliot.jpg" },
   },
   {
     key: "Stevie Feliciano",
     text: "Stevie Feliciano",
     value: "Stevie Feliciano",
-    image: { avatar: true, src: "/images/avatar/small/stevie.jpg" },
+    // image: { avatar: true, src: "/images/avatar/small/stevie.jpg" },
   },
   {
     key: "Christian",
     text: "Christian",
     value: "Christian",
-    image: { avatar: true, src: "/images/avatar/small/christian.jpg" },
+    // image: { avatar: true, src: "/images/avatar/small/christian.jpg" },
   },
   {
     key: "Matt",
     text: "Matt",
     value: "Matt",
-    image: { avatar: true, src: "/images/avatar/small/matt.jpg" },
+    // image: { avatar: true, src: "/images/avatar/small/matt.jpg" },
   },
   {
     key: "Justen Kitsune",
     text: "Justen Kitsune",
     value: "Justen Kitsune",
-    image: { avatar: true, src: "/images/avatar/small/justen.jpg" },
+    // image: { avatar: true, src: "/images/avatar/small/justen.jpg" },
   },
 ];
 
 function DropdownComponent(props) {
   return (
     <div>
-      <h3>{props.name}</h3>
+      {props.name + ' '}
       <Dropdown
-        placeholder="Select Friend"
+        placeholder="Select Language"
         fluid
         selection
-        options={friendOptions}
-      />
+        labeled
+        options={friendOptions}/>
     </div>
   );
 }
